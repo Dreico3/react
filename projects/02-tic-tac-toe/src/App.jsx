@@ -1,6 +1,5 @@
 import { useState } from "react"
-import { Children } from "react"
-
+import confetti from "canvas-confetti"
 const TURNS = {
   x: 'x',
   o: 'o'
@@ -28,8 +27,17 @@ const WINNER_COMBOS = [
   [2, 4, 6]
 ]
 function App() {
-  const [board, setBoard] = useState(Array(9).fill(null))
-  const [turn, setTurn] = useState(TURNS.x)
+  const [board, setBoard] = useState(() => {
+    const boardFromStorage = window.localStorage.getItem('board')
+    if (boardFromStorage) return JSON.parse(boardFromStorage)
+    return Array(9).fill(null)
+  })
+  const [turn, setTurn] = useState(() => {
+    console.log(window.localStorage.getItem('turn'),'sss')
+    const turnFromStorage = window.localStorage.getItem('turn')
+    if (turnFromStorage) return turnFromStorage
+    return TURNS.x
+  })
   const [winner, serWinner] = useState(null)
   const checkWinner = (boardToCheck) => {
     for (const combo of WINNER_COMBOS) {
@@ -39,9 +47,20 @@ function App() {
         boardToCheck[b] === turn &&
         boardToCheck[c] === turn
       ) {
+        confetti()
         serWinner(turn)
       }
+      if (boardToCheck.every((square) => square !== null)) {
+        serWinner(false)
+      }
     }
+  }
+  const resetGame = () => {
+    setBoard(Array(9).fill(null))
+    setTurn(TURNS.x)
+    serWinner(null)
+    window.localStorage.removeItem('board')
+    window.localStorage.removeItem('turn')
   }
   const updateBoard = (index) => {
     if (board[index] || winner) return
@@ -51,6 +70,8 @@ function App() {
     checkWinner(newBoard)
     setBoard(newBoard)
     setTurn(newTurn)
+    window.localStorage.setItem('board', JSON.stringify(newBoard))
+    window.localStorage.setItem('turn', newTurn)
   }
 
   return (
@@ -74,7 +95,28 @@ function App() {
       <section className="turn">
         <Square isSelected={turn === TURNS.x}>{TURNS.x}</Square>
         <Square isSelected={turn === TURNS.o}>{TURNS.o}</Square>
-        Winner is : {winner}
+      </section>
+      <section>
+        {
+          winner !== null && (
+            <section className="winner">
+              <div className="text">
+                <h2>
+                  {winner === false
+                    ? 'Empate'
+                    : 'winner is ' + winner
+                  }
+                </h2>
+                <header className="win">
+                  {winner && <Square>{winner}</Square>}
+                </header>
+                <footer>
+                  <button onClick={resetGame}>Empezar de nuevo?</button>
+                </footer>
+              </div>
+            </section>
+          )
+        }
       </section>
     </main>
   )
