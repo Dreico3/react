@@ -1,0 +1,76 @@
+{
+    "Search": [
+        {
+            "Title": "Clash of the Titans",
+            "Year": "2010",
+            "imdbID": "tt0800320",
+            "Type": "movie",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BMTYxNjg4MzU5OV5BMl5BanBnXkFtZTcwOTA3NTUwMw@@._V1_SX300.jpg"
+        },
+        {
+            "Title": "Remember the Titans",
+            "Year": "2000",
+            "imdbID": "tt0210945",
+            "Type": "movie",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BYThkMzgxNjEtMzFiOC00MTI0LWI5MDItNDVmYjA4NzY5MDQ2L2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"
+        },
+        {
+            "Title": "Wrath of the Titans",
+            "Year": "2012",
+            "imdbID": "tt1646987",
+            "Type": "movie",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BMjMyMzk1Nzg3OF5BMl5BanBnXkFtZTcwOTQ2NjcxNw@@._V1_SX300.jpg"
+        },
+        {
+            "Title": "Titans",
+            "Year": "2018–2023",
+            "imdbID": "tt1043813",
+            "Type": "series",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BNTJlNGQ3YmUtMGNjNC00OTE5LWFmYzEtNjJiMDNmZjk0ZjU0XkEyXkFqcGc@._V1_SX300.jpg"
+        },
+        {
+            "Title": "Clash of the Titans",
+            "Year": "1981",
+            "imdbID": "tt0082186",
+            "Type": "movie",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BZTQ4NDUxMTUtZDM0YS00MTk5LWExMWMtZjBiYTFjYTM3ZjJkXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_SX300.jpg"
+        },
+        {
+            "Title": "Teen Titans",
+            "Year": "2003–2006",
+            "imdbID": "tt0343314",
+            "Type": "series",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BNjQ1NjBhZmQtZTlkOC00YTM2LWE3NjgtNmZjOWJhMjRkMTY1XkEyXkFqcGdeQXVyNTgyNTA4MjM@._V1_SX300.jpg"
+        },
+        {
+            "Title": "Teen Titans Go!",
+            "Year": "2013–",
+            "imdbID": "tt2771780",
+            "Type": "series",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BMjE5MjMzOTc1Ml5BMl5BanBnXkFtZTcwNDQxMDY5OQ@@._V1_SX300.jpg"
+        },
+        {
+            "Title": "Teen Titans GO! To the Movies",
+            "Year": "2018",
+            "imdbID": "tt7424200",
+            "Type": "movie",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BOTZhMTIwZDUtYjZjZS00MmViLTg3NzEtNWE5NzI1NDUwNDJmXkEyXkFqcGdeQXVyODQxMTI4MjM@._V1_SX300.jpg"
+        },
+        {
+            "Title": "Justice League vs. Teen Titans",
+            "Year": "2016",
+            "imdbID": "tt5091548",
+            "Type": "movie",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BMDFiYTBkOGQtZjAwNi00OGMwLTg0YzQtNjI5YmFlZjY3ZWM3XkEyXkFqcGdeQXVyNTA0OTU0OTQ@._V1_SX300.jpg"
+        },
+        {
+            "Title": "Teen Titans: The Judas Contract",
+            "Year": "2017",
+            "imdbID": "tt6315800",
+            "Type": "movie",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BNGZlODc0YjgtNWZjNS00NGNjLTgwOTUtMTllZTEyYjE0YTMwXkEyXkFqcGdeQXVyNjUwNzk3NDc@._V1_SX300.jpg"
+        }
+    ],
+    "totalResults": "146",
+    "Response": "True"
+}
